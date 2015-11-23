@@ -78,7 +78,7 @@ var newNum = numbers.toString();
 console.log(newNum);
 
 for (var i = 0; i < newNum.length; i++) {
-    document.write(i + " ");
+    document.write(newNum[i] + " ");
 }
 
 //task 5
@@ -94,7 +94,7 @@ var height = window.prompt("Enter height of triangle");
 height = parseInt(height);
 
 for (var i = 0; i < height; i++) {
-    for (var j = 0; j <= i * 2; j++ ){
+    for (var j = 0; j <= i * 2; j++){
             document.write('*');
     }
     document.write('<br>');
