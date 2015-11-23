@@ -90,6 +90,7 @@ for (var i = 0; i < newNum.length; i++) {
 // *******
 //Для вывода использовать document.write("ваш сформированный html")
 
+//решение работает только с исходным .html файлом, поскольку там настроен text-align
 var height = window.prompt("Enter height of triangle");
 height = parseInt(height);
 
