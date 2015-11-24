@@ -1,0 +1,11 @@
+table {
+    border-collapse: collapse;
+}
+th, tr {
+    border: 2px solid black;
+    width: 5em;
+    height: 5em;
+}
+p {
+    font-size: 1.5em;
+}
