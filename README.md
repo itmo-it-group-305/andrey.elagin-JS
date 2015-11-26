@@ -1,5 +1,8 @@
 # andrey.elagin-JS
 <hr>
+<a href="//github.com/itmo-it-group-305/andrey.elagin-JS/tree/master/homework/24.11">Домашняя работа от 26.11</a><br>
+<p>Понимаение пришло слишком поздно :) Пора спать</p>
+<hr>
 <a href="//github.com/itmo-it-group-305/andrey.elagin-JS/tree/master/homework/24.11">Домашняя работа от 24.11</a><br>
 <hr>
 <a href="//github.com/itmo-it-group-305/andrey.elagin-JS/tree/master/homework/22.11">Домашняя работа от 22.11</a><br>
