@@ -112,7 +112,7 @@ var eventReignOfYaroslav = {
 var eventIceBattle = {
     year: 1242,
     title: '<h2 id="IceBattle">Ледовое побоище</h2>',
-    photo: '<img src="//oursociety.ru/_pu/1/16489367.jpg" alt="Ледовое побоище">',
+    photo: '<img src="http://oursociety.ru/_pu/1/16489367.jpg" alt="Ледовое побоище">',
     description: '<p>Ледо́вое побо́ище (нем. Schlacht auf dem Eise, лат. Prœlium glaciale — «Ледовая битва»), также битва на Чудском озере (нем. Schlacht auf dem Peipussee) — битва, произошедшая на льду Чудского озер) с участием ижоры, новгородцев и владимирцев под предводительством Александра Невского, с одной стороны, и войском Ливонского ордена, с другой стороны.',
     active: '<form><input type="button" onClick="question(eventIceBattle)" value="Когда это произошло?"/></form>',
     linkToNext: '<br><a href=#fallout2>К следующему вопросу</a>'
@@ -121,7 +121,7 @@ var eventIceBattle = {
 var eventFallout2Realease = {
     year: 1998,
     title: '<h2 id="fallout2">Выход Fallout 2</h2>',
-    photo: '<img src="//static1.gamespot.com/uploads/original/1539/15391776/2571540-7895982999-22762.jpg" alt="Fallout 2">',
+    photo: '<img src="http://static1.gamespot.com/uploads/original/1539/15391776/2571540-7895982999-22762.jpg" alt="Fallout 2">',
     description: '<p>Fallout 2 — компьютерная ролевая игра с открытым миром, разработанная Black Isle Studios и выпущенная издателем Interplay Entertainment. Является второй частью из серии Fallout. Несмотря на то, что игровой движок практически не изменился с первой части, благодаря детальной проработке игрового мира и сюжета, продолжению удалось превзойти её в популярности.ы.',
     active: '<form><input type="button" onClick="question(eventFallout2Realease)" value="Когда когда вышел этот шедевр?"/></form>',
     linkToNext: '<br><a href=#total>К следующему вопросу</a>'
@@ -130,7 +130,7 @@ var eventFallout2Realease = {
 var eventTotalEclipse = {
     year: 1983,
     title: '<h2 id="total">Дата выхода самой лучшей песни в мире?</h2>',
-    photo: '<img src="//images.radiotimes.com/namedimage/Bonnie_Tyler_to_represent_UK_at_Eurovision_Song_Contest.jpg?quality=85&mode=crop&width=620&height=374&404=tv&url=/uploads/images/original/26189.jpg" alt="Fallout 2">',
+    photo: '<img src="http://images.radiotimes.com/namedimage/Bonnie_Tyler_to_represent_UK_at_Eurovision_Song_Contest.jpg?quality=85&mode=crop&width=620&height=374&404=tv&url=/uploads/images/original/26189.jpg" alt="Fallout 2">',
     description: '<p>Просто самая лучшая песня в мире',
     active: '<form><input type="button" onClick="question(eventTotalEclipse)" value="Когда когда вышел этот шедевр?"/></form>',
     linkToNext: '<br><a href=#>К следующему вопросу</a>'
