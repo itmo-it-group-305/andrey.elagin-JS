@@ -59,12 +59,14 @@
 //document.write("<p>Описание ...</p><div>");
 
 var answerArray = [];
+var result = "";
 
 function addObjectToDom (object) {
     document.write(object.title);
     document.write(object.photo);
     document.write(object.description);
-    document.write(object.link);
+    document.write(object.active);
+    document.write(object.linkToNext);
 }
 
 function question (object) {
@@ -80,24 +82,36 @@ function question (object) {
     console.log(answerArray);
 }
 
+function calcResult (array) {
+    for (var b = 0; b <array.length; b++) {
+        if (array[b] == 'true'){
+            result++;
+        }
+    }
+    alert("Ваш результат: " + result + " из 10")
+}
+
 var eventChristianization = {
     year: 988,
-    title: '<h2>Крещение Руси</h2>',
+    title: '<h2 id="Christ">Крещение Руси</h2>',
     photo: '<img src="img/kreshenie.jpg" alt="Крещение">',
     description: '<p>Крещение Руси — введение в Древней Руси христианства как государственной религии, осуществлённое в конце X века князем Владимиром Святославичем. Источники дают противоречивые указания на точное время крещения. Традиционно, вслед за летописной хронологией, событие принято относить к 988 году и считать началом официальной истории Русской Церкви (некоторые исследователи полагают, что крещение Руси состоялось позже: в 990 или 991 году).',
-    link: '<form><input type="button" onClick="question(eventChristianization)" value="Когда это произошло?"/></form>'
+    active: '<form><input type="button" onClick="question(eventChristianization)" value="Когда это произошло?"/></form>',
+    linkToNext: '<br><a href=#yaroslav>К следующему вопросу</a>'
 };
 
 var eventReignOfYaroslav = {
-    year: 988,
-    title: '<h2></h2>',
-    photo: '<img src="" alt="">',
-    description: '<p>',
-    link: '<a href="">link</a>'
+    year: 1016,
+    title: '<h2 id="yaroslav">Становление Ярослава киевским князем</h2>',
+    photo: '<img src="img/yaroslav.jpg" alt="Ярослав Мудрый">',
+    description: '<p>Ярослав Владимирович — сын крестителя Руси князя Владимира Святославича (из рода Рюриковичей) и полоцкой княжны Рогнеды Рогволодовны, отец, дед и дядя многих правителей Европы. При крещении был наречён Георгием. В Русской православной церкви почитается как благоверный князь; день памяти — 20 февраля по юлианскому календарю.',
+    active: '<form><input type="button" onClick="question(eventReignOfYaroslav)" value="Когда это произошло?"/></form>',
+    linkToNext: '<br><a href=#>К следующему вопросу</a>'
 };
 
 addObjectToDom(eventChristianization);
-
+addObjectToDom(eventReignOfYaroslav);
+document.write('<br><br><form><input type="button" onClick="calcResult(answerArray)" value="Вычислить результат"/></form>');
 
 
 
