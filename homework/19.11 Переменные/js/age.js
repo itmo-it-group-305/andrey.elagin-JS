@@ -1,3 +1,4 @@
+
 /**
  * Created by daddyingrave on 20.11.15.
  */
@@ -8,3 +9,5 @@ var ageInc = parseInt(age);
 ageInc += 1;
 
 console.log("Ваш возраст через год " + ageInc)
+
+
