@@ -88,7 +88,7 @@
 //}
 //console.log(getSums(arr));
 
-arr = [ 1, 2, 3, 4, 5 ];
+//arr = [ 1, 2, 3, 4, 5 ];
 
 //function getSumAgain (arr) {
 //    var result = [];
@@ -106,7 +106,31 @@ arr = [ 1, 2, 3, 4, 5 ];
 
 // todo изучить метод reduce/reduceRight
 
+//еще пара задач с learn.javascript.ru
+//Как в функции отличить отсутствующий аргумент от undefined?
 
+// function f(x) {
+//   alert(arguments.length ? 1 : 0)
+//   // ..ваш код..
+//   // выведите 1, если первый аргумент есть, и 0 - если нет
+// }
+
+// f(undefined); // 1
+// f(); // 0
+
+
+//Напишите функцию sum(...), которая возвращает сумму всех своих аргументов:
+
+var sumArgs = 0;
+
+function sum() {
+  for (var i = 0; i < arguments.length; i++) {
+    sumArgs += arguments[i];
+  }
+  return sumArgs;
+}
+
+alert(sum(1,2,3));
 
 
 
