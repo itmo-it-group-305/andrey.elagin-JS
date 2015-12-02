@@ -1,9 +1,8 @@
-# JavaScript
+﻿# JavaScript
 
 message-chat
 <hr>
 <a href="//github.com/itmo-it-group-305/andrey.elagin-JS/tree/master/homework/01.12 Chat">Домашняя работа от 01.12 (Некое подобие чата)</a><br>
-<hr>
 <hr>
 <a href="//github.com/itmo-it-group-305/andrey.elagin-JS/tree/master/homework/26.11 Objects">Домашняя работа от 26.11 (Объекты)</a><br>
 <hr>
