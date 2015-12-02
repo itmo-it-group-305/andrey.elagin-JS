@@ -1,0 +1,33 @@
+.root {
+    border: 5px solid black;
+    width: 25em;
+    height: 15em;
+    display: block;
+}
+
+.red {
+    background: red;
+    border: 1px solid black;
+    margin: 10%;
+    width: 3em;
+    height: 3em;
+    display: inline-block;
+}
+
+.yellow {
+    background: yellow;
+    border: 1px solid black;
+    margin: 10%;
+    width: 3em;
+    height: 3em;
+    display: inline-block;
+}
+
+.green {
+    background: green;
+    border: 1px solid black;
+    margin: 10%;
+    width: 3em;
+    height: 3em;
+    display: inline-block;
+}

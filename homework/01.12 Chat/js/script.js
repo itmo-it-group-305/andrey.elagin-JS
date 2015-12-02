@@ -3,6 +3,7 @@
  */
 //Хотел сделать что то человеческое и отказаться по максимуму от
 //innerHTML, но получился этот ад :)
+//todo переделать реализацию, чтобы верстка не ехала
 function receive() {
     var parent2 = document.getElementById('chat');
 
