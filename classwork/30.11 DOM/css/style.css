@@ -1,0 +1,31 @@
+.old-text {
+    margin-left: 4%;
+    width: 90%;
+    resize: none;
+    margin-top: 5%;
+}
+
+.wrapper {
+    width: 20em;
+    height: 30em;
+    background-color: #96c975;
+}
+
+.send {
+    display: block;
+    margin-left: 70%;
+}
+
+.chat {
+    background-color: black;
+    /*margin-top: 3em;*/
+    display: block;
+    width: 90%;
+    height: 100%;
+    text-align: center;
+}
+
+.newText {
+    width: 90%;
+    resize: none;
+}
