@@ -29,13 +29,16 @@
 
 elem = document.getElementById('root');
 
+elem.addEventListener('click', handler, true);
+
 function handler(e) {
     //e.preventDefault();
     //e.stopPropagation();
-    console.log(e.target);
-    //return false
+    //console.log(e.target);
+    var color = e.target.getAttribute('id'); //Почему то это возвращает ошибку, но color значение атрибута получает
+    console.log("It's " + color + " block");
 }
 
-elem.addEventListener('click', handler, false);
+
 
 
