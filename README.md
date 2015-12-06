@@ -1,5 +1,7 @@
 ﻿# JavaScript
 <hr>
+<a href="//github.com/itmo-it-group-305/andrey.elagin-JS/tree/master/homework/06.12 Traffic light">Домашняя работа от 06.12 (Светофор)</a><br>
+<hr>
 <a href="//github.com/itmo-it-group-305/andrey.elagin-JS/tree/master/homework/03.12 Add to select">Домашняя работа от 03.12 (Динамическое добавление элементов в селект)</a><br>
 <hr>
 <a href="//github.com/itmo-it-group-305/andrey.elagin-JS/tree/master/homework/01.12 Chat">Домашняя работа от 01.12 (Некое подобие чата)</a><br>

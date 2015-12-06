@@ -2,6 +2,9 @@
  * Created by daddyingrave on 25.11.15.
  */
 
+//task
+//Реализовать светофор
+
 var redRound = document.getElementById('red');
 var yellowRound = document.getElementById('yellow');
 var greenRound = document.getElementById('green');
