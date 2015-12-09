@@ -48,6 +48,7 @@ function builtForm (object) {
     return parent;
 }
 
+//Больше не нужна
 function checkEmptyField(field) {
     return Boolean(field.value);
 }
@@ -55,44 +56,45 @@ function checkEmptyField(field) {
 function getFormFields() {
     var field = ['name', 'phone', 'email'];
     for (var i in field) {
+        console.log(field[i]);
         var obj = document.getElementById(field[i]);
-        if (checkEmptyField(obj)) {
-            console.log('true ' + obj.id);
+        console.log(obj);
+        if (obj.id == 'name' && checkName(obj.value)) {
+            console.log("pass" + obj.id);
             var elem = document.getElementById(obj.id);
-            //elem.setAttribute('style', 'border-color: green');
-            elem.style.borderColor = '';
-        } else {
-            console.log('false ' + obj);
-            var elem2 = document.getElementById(obj.id);
-            elem2.setAttribute('style', 'border-color: red');
-
+            elem.setAttribute('style', 'border-color: green');
         }
-    }
+        else if (obj.id == 'phone' && checkPhone(obj.value)) {
+            //console.log("pass" + obj.value)
+            var elem2 = document.getElementById(obj.id);
+            elem2.setAttribute('style', 'border-color: green');
+        }
+        else if (obj.id == 'email' && checkEmail(obj.value)) {
+            //console.log("pass" + obj.value)
+            var elem3 = document.getElementById(obj.id);
+            elem3.setAttribute('style', 'border-color: green');
+        }
+        else {
+            var elem4 = document.getElementById(obj.id);
+            elem4.setAttribute('style', 'border-color: red');
+            }
+        }
 }
+//todo сделать крестик
 
 function checkPhone (str) {
-    var str = '7(921)911-23-12';
-    var pattern = /\b\d\(\d{3}\)\d{3}-\d{2}-\d{2}\b/;
-    console.log(pattern.test(str));
+    var patternPhone = /\b\d\(\d{3}\)\d{3}-\d{2}-\d{2}\b/;
+    return patternPhone.test(str);
 }
-
-
-//str = '44:44';
-//var pattern = /\b\d{2}:\d{2}\b/;
-//console.log(str.match(pattern));
-//console.log(pattern.test(str));
+function checkEmail (str) {
+    var patternEmail = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,6}$/i;
+    return patternEmail.test(str);
+}
+function checkName (str) {
+    var patternName = /^[a-z0-9]{2,12}$/i;
+    return patternName.test(str);
+}
 
 //parent = document.getElementById('wrap');
 //parent.appendChild(builtForm(form));
 //parent.appendChild(builtForm(form));
-
-
-
-//setInterval('alert("Прошла секунда")', 1000);
-
-//function sec () {
-//    alert('second is gone');
-//}
-//
-//var intervalID = setInterval(sec, 1000);
-//clearInterval(intervalID);
