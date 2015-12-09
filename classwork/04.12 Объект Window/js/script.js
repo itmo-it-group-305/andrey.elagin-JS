@@ -56,29 +56,26 @@ function checkEmptyField(field) {
 function getFormFields() {
     var field = ['name', 'phone', 'email'];
     for (var i in field) {
-        console.log(field[i]);
-        var obj = document.getElementById(field[i]);
-        console.log(obj);
-        if (obj.id == 'name' && checkName(obj.value)) {
-            console.log("pass" + obj.id);
-            var elem = document.getElementById(obj.id);
-            elem.setAttribute('style', 'border-color: green');
-        }
-        else if (obj.id == 'phone' && checkPhone(obj.value)) {
-            //console.log("pass" + obj.value)
-            var elem2 = document.getElementById(obj.id);
-            elem2.setAttribute('style', 'border-color: green');
-        }
-        else if (obj.id == 'email' && checkEmail(obj.value)) {
-            //console.log("pass" + obj.value)
-            var elem3 = document.getElementById(obj.id);
-            elem3.setAttribute('style', 'border-color: green');
-        }
-        else {
-            var elem4 = document.getElementById(obj.id);
-            elem4.setAttribute('style', 'border-color: red');
+        if (field.hasOwnProperty(i)) {
+            var obj = document.getElementById(field[i]);
+            if (obj.id == 'name' && checkName(obj.value)) {
+                var elem = document.getElementById(obj.id);
+                elem.setAttribute('style', 'border-color: green');
+            }
+            else if (obj.id == 'phone' && checkPhone(obj.value)) {
+                var elem2 = document.getElementById(obj.id);
+                elem2.setAttribute('style', 'border-color: green');
+            }
+            else if (obj.id == 'email' && checkEmail(obj.value)) {
+                var elem3 = document.getElementById(obj.id);
+                elem3.setAttribute('style', 'border-color: green');
+            }
+            else {
+                var elem4 = document.getElementById(obj.id);
+                elem4.setAttribute('style', 'border-color: red');
             }
         }
+    }
 }
 //todo сделать крестик
 
