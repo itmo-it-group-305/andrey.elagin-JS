@@ -1,0 +1,54 @@
+button {
+    border: none;
+}
+
+input {
+    display: block;
+    margin: 0.3em 0;
+}
+
+label {
+
+}
+
+button:hover {
+    background: #96c975;
+}
+
+input:hover {
+    background: rgba(150, 201, 117, 0.39);
+    border-color: transparent;
+}
+
+input:focus {
+
+}
+
+.wrap {
+    margin: 5em auto 0;
+    display: none;
+    width: 11em;
+    border: 2px solid rgba(128, 128, 128, 0.5);
+    padding: 1em;
+}
+
+.start {
+    margin: 1em auto 0;
+    display:block;
+}
+
+.close {
+    display: block;
+    margin: 0 0 0 auto;
+    width: 2.5em;
+}
+
+.ok {
+    display: block;
+    margin: 1em 0 0 auto;
+    width: 2.5em;
+}
+
+
+
+
