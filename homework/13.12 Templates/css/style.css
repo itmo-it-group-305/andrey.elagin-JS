@@ -1,0 +1,135 @@
+@import url(//necolas.github.io/normalize.css/3.0.2/normalize.css);
+@import "../fonts/font-awesome-4.4.0/css/font-awesome.min.css";
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300|Arimo|Merriweather);
+@import "reset.css";
+@import "grid.css";
+@import "menu.css";
+
+@font-face {
+    font-family: "Novecentowide";
+    src: url(../fonts/novecentowide-medium-webfont.woff) format('woff');
+    font-weight: bold; /*400 Лучше задавать и font style normal или italic*/
+}
+
+@font-face {
+    font-family: "NovecentowideDemiBold";
+    src: url("../fonts/novecentowide-demibold-webfont.woff") format('woff');
+    font-weight: bold; /*700 Лучше задавать*/
+}
+
+body {
+    background: #eaeaea;
+    min-width: 90em;
+}
+
+article header {
+    border-bottom: 1px dashed gray;
+    padding-bottom: 1em;
+}
+
+article header h2 {
+    font-family: Novecentowide;
+    font-size: 1.5em;
+    margin-bottom: 0.45em;
+}
+
+article header time {
+    padding-bottom: 0.45em;
+}
+
+article img {
+    padding: 1.7em;
+}
+
+img {
+    width: 100%;
+}
+
+input {
+    display: block;
+    margin-bottom: 1em;
+    width: 100%;
+}
+
+textarea {
+    resize: none;
+    width: 100%;
+    height: 10em;
+}
+
+button {
+    border: none;
+    margin-top: 1em;
+    font-size: small;
+    width: 10em;
+    height: 2em;
+
+}
+
+
+form h2 {
+    font-size: 2em;
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #71729b;
+}
+
+.some {
+    border-bottom: 2px solid gray;
+}
+
+/*article:last-child {*/
+    /*border-bottom: none;*/
+/*}*/
+
+article,
+.linkImage {
+    margin-top: 2em;
+    overflow: hidden; /*погуглить*/
+}
+
+article p,
+.linkText p {
+    margin-bottom: 2em;
+    line-height: 1.45em;
+}
+
+.newsFeed,
+.rightSideBar{
+    background: #fefefe;
+}
+
+.rightSideBar {
+    font-size: 0.9em;
+    padding: 0;
+    margin-left: 2em;
+}
+
+.newsFeed {
+    margin-left: 2.2em;
+}
+
+.wrap {
+    font-family: 'Arimo', sans-serif;
+    font-weight: 400;
+    /*padding: 0 7em 0 7em;*/
+}
+
+.rightSideBar a {
+    color: #71cbd7;
+}
+
+.newsFeed time {
+    font-family: 'Merriweather', serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 0.74em;
+}
+
+.linkText {
+    margin-top: 1.7em;
+}
+
