@@ -1,9 +1,7 @@
 ### JetBrains template
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio
 
-
-*js/jquery-2.1.4.js
-*js/mustache.js
+libs/
 *css/reset.css
 ## Directory-based project format:
 .idea/

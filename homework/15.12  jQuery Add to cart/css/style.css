@@ -3,3 +3,71 @@
 @import "reset.css";
 @import "grid.css";
 
+div, header, p, img {
+    border: 1px dashed black;
+}
+
+img {
+    width: auto;
+    margin: 3.5% 0;
+}
+
+.goods {
+    display: table;
+    margin-top: 5em;
+}
+
+.basket {
+    display: table;
+    margin: 5em 0;
+}
+
+.to-cart {
+    width: 7em;
+    margin: 3em 2em 0;
+    padding: 0;
+}
+
+.description-wrap {
+    margin: 6% 0;
+}
+
+.description-wrap header {
+    font: 1.3em bold;
+}
+
+.price {
+    margin-top: 1em;
+}
+
+.price-block {
+    margin: 3.5% 0;
+    text-align: center;
+}
+
+.stuff {
+    margin: 1em 0;
+}
+
+.basket-stuff {
+    margin: 3.5% 0;
+}
+
+.quantity {
+    margin: 3.5% 0;
+}
+
+.basket-price-wrap {
+    margin: 3.5% 0;
+}
+
+.basket-header {
+    font: 1.3em bold;
+    margin-top: 1em;
+    margin-bottom: 1em
+}
+
+.cart-button {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}

@@ -1,16 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="../../libs/js/jquery-2.1.4.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/style.css">
     <title></title>
 </head>
 <body>
-    <div class="wrapper" id="wrapper">
-        <button class="button" id="button1" name="Name of this shit" >Тык</button>
-        <button class="button" id="button2" name="Name of this shit2">Тыц</button>
+    <div class="wrapper col-12" id="wrapper">
+            <div class="goods col-6 offset-3" id="goods">
+                <div class="stuff col-12">
+                    <img class="col-2 stuff-image" src="img/peaceduck.jpg" alt="утко">
+                    <div class="description-wrap col-7">
+                        <header class="col-12">Товар 1</header>
+                        <p class="description col-12">Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit. Accusantium animi </p>
+                    </div>
+                    <div class="price-block col-3">
+                        <p class="price col-6 offset-3">100</p>
+                        <button class="to-cart col-6">Добавить в корзину</button>
+                    </div>
+                </div>
+                <div class="stuff col-12">
+                    <img class="col-2 stuff-image" src="img/peaceduck.jpg" alt="утко">
+                    <div class="description-wrap col-7">
+                        <header class="col-12">Товар 1</header>
+                        <p class="description col-12">Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit. Accusantium animi </p>
+                    </div>
+                    <div class="price-block col-3">
+                        <p class="price col-6 offset-3">100</p>
+                        <button class="to-cart col-6">Добавить в корзину</button>
+                    </div>
+                </div>
+                <div class="stuff col-12">
+                    <img class="col-2 stuff-image" src="img/peaceduck.jpg" alt="утко">
+                    <div class="description-wrap col-7">
+                        <header class="col-12">Товар 1</header>
+                        <p class="description col-12">Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit. Accusantium animi </p>
+                    </div>
+                    <div class="price-block col-3">
+                        <p class="price col-6 offset-3">100</p>
+                        <button class="to-cart col-6">Добавить в корзину</button>
+                </div>
+            </div>
+            <div class="basket col-12 " id="basket">
+                <header class="basket-header col-4 offset-4">Я есть корзина</header>
+                <div class="basket-wrap col-12">
+                    <div class="basket-stuff col-8" id="basket-stuff">
+                        <p>Наименование технические характеристики и ....А я товар в корзине lorem</p>
+                    </div>
+                    <div class="quantity col-2 " id="quantity">
+                        <p>28</p>
+                    </div>
+                    <div class="basket-price-wrap col-2">
+                        <div class="basket-price col-12" id="price">
+                            <p>500$</p>
+                        </div>
+                    </div>
+                    <button class="cart-button offset-10">Оформить заказ</button>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
