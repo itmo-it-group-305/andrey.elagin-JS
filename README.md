@@ -1,5 +1,7 @@
 ﻿# JavaScript
 <hr>
+<a href="//github.com/itmo-it-group-305/andrey.elagin-JS/tree/master/homework/21.12 Template + jQuery">Домашняя работа от 21.12 (jQuery + Шаблонизатор)</a><br>
+<hr>
 <a href="//github.com/itmo-it-group-305/andrey.elagin-JS/tree/master/homework/13.12 Templates">Домашняя работа от 13.12 (Создание шаблонов)</a><br>
 <hr>
 <a href="//github.com/itmo-it-group-305/andrey.elagin-JS/tree/master/homework/10.12 Form disappearance">Домашняя работа от 10.12 (Форма. Появление и удаление)</a><br>
