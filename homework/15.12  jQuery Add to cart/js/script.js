@@ -1,45 +1,83 @@
 jQuery(document).ready(
     function() {
+        var basket = {
+            price: 0,
+            counter: 0,
+            positionNumber: 1,
+            totalPrice: 0,
 
-        var counter = 0;
-        var positionNumber = 1;
-        var totatlPrice = 0;
+            init: function () {
+                jQuery('.stuff').on('click', 'button', basket.addToCart);
+                jQuery('.basket').on('click', '.basket-delete', basket.delFromCart);
+            },
+            addToCart: function (e) {
+                var elem = jQuery(e.toElement);
+                var newElem = elem.closest('div.stuff');
+                var productName = newElem.attr('product-name');
+                var price = newElem.attr('price');
 
-        jQuery('.stuff').on('click', 'button', function(e) {
-            var elem = jQuery(e.toElement);
-            var newElem = elem.closest('div.stuff');
-            var productCode = newElem.attr('product-code');
-            var productName = newElem.attr('product-name');
-            var price = newElem.attr('price');
+                var tempStr = '<div class="some-wrap col-12"><div class="basket-stuff col-6" id="basket-stuff">' +
+                    '<p>{{positionNumber}} {{productName}}</div><div class="quantity col-2 " id="quantity">' +
+                    '<p>количество</div><div class="basket-price-wrap col-2">' +
+                    '<div class="basket-price col-12" id="price" price="{{price}}">{{price}}</div>' +
+                    '</div><div class="basket-empty col-2">' +
+                    '<button class="basket-delete" price="{{price}}">x</button></div></div>';
 
-            var str = '<div class="some-wrap col-12"><div class="basket-stuff col-6" id="basket-stuff">'+
-                '<p>' + positionNumber + ' ' + productName + '</div>' + '<div class="quantity col-2 " id="quantity">' +
-                '<p>' + 'количество' + '</div>' + '<div class="basket-price-wrap col-2">' +
-                '<div class="basket-price col-12" id="price" price="'+price+'">' + price + '</div>' +
-                '</div>' + '<div class="basket-empty col-2">' +
-                '<button class="basket-delete">x</button>' + '</div></div>';
+                var dataTemp = {
+                    "positionNumber": function() {
+                        return basket.positionNumber;
+                    },
+                    "productName": function() {
+                        return productName;
+                    },
+                    "price": function() {
+                        return price;
+                    }
+                };
 
-            jQuery('.basket-wrap').append(str);
-            positionNumber++;
-            totatlPrice += +price;
-            jQuery('.total-sum').html('Итого: ' + totatlPrice);
+                var content = Mustache.render(tempStr, dataTemp);
+                jQuery('.basket-wrap').append(content);
+                basket.positionNumber++;
+                basket.totalPrice += +price;
+                jQuery('.total-sum').html('Итого: ' + basket.totalPrice);
+            },
+            delFromCart: function (e) {
+                var elem = jQuery(e.toElement);
+                var currentElem = elem.parent('div.basket-empty').prev();
+                var priceNode = currentElem.children();
+                var currentWrap = jQuery(e.target).closest('.some-wrap');
+                var currentPrice = priceNode.attr('price');
+                console.log(currentPrice);
+                console.log(priceNode);
+                basket.positionNumber--;
+                basket.totalPrice -= +currentPrice;
+                jQuery('.total-sum').html('Итого: ' + basket.totalPrice);
+                currentWrap.remove();
+            },
+            priceUpdate: function () {
+            },
+            changeQuantity: function () {
+            },
+            discount: function () {
+            },
+            printExcel: function () {
+                //jQuery.ajax({
+                //    'type': 'POST',
+                //    'url': '/dir/myscript.php',
+                //    'contentType': 'json',
+                //    'data': {
+                //        'login': jQuery('#login').val(),
+                //        'passw': jQuery('#passw').val()},
+                //    'cache': false,
+                //    'success': function(html) {
+                //        if (html.length) {
+                //            //ololo
+                //        }
+                //    }
+                //})
+            }
+        };
 
-            //counter += +price;
-            //jQuery('#basket').append(str);
-            //console.log(counter);
-        });
-
-        jQuery('.basket').on('click', '.basket-delete',  function(e) {
-            //todo сделать долбанный карентпрайс
-            var elem = jQuery(e.toElement);
-            var currentPrice = elem.closest('#price');
-            var currentWrap = jQuery(e.target).closest('.some-wrap');
-            //var currentPrice =  jQuery(e.target).closest('.basket-price');
-            console.log(currentPrice);
-            positionNumber--;
-            //totatlPrice -= +currentPrice;
-            //console.log('after' + totatlPrice);
-            currentWrap.remove();
-        })
+        basket.init();
+        basket.printExcel();
     });
-
