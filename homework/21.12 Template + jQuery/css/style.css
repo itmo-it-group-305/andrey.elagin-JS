@@ -1,0 +1,116 @@
+@import url(//necolas.github.io/normalize.css/3.0.2/normalize.css);
+@import url(//fonts.googleapis.com/css?family=Source+Sans+Pro:400,300|Arimo|Merriweather);
+@import "reset.css";
+@import "grid.css";
+
+/*div, header, p, img {*/
+    /*border: 1px dashed black;*/
+/*}*/
+
+img {
+    width: auto;
+    margin: 3.5% 0;
+}
+
+.goods {
+    display: table;
+    margin-top: 5em;
+
+}
+
+.to-cart {
+    width: 7em;
+    margin: 3em 2em 0;
+    padding: 0;
+}
+
+.description-wrap {
+    margin: 6% 0;
+
+}
+
+.description-wrap header {
+    font: 1.3em bold;
+}
+
+.description {
+    margin-top: .5em;
+}
+
+.price {
+    margin-top: 1em;
+}
+
+.price-block {
+    margin: 3.5% 0;
+    text-align: center;
+}
+
+.stuff {
+    margin: 1em 0;
+    border: 1px solid black;
+}
+
+.basket {
+    display: table;
+    margin: 5em 0;
+}
+
+.basket-wrap {
+    padding: 0;
+}
+
+.basket-content {
+    padding: 0;
+
+}
+
+.basket-stuff {
+    margin: 3.5% 0;
+}
+
+.quantity {
+    margin: 3.5% 0;
+    text-align: center;
+}
+
+.basket-price-wrap {
+    margin: 3.5% 0;
+}
+
+.basket-price {
+    margin: auto;
+}
+
+.basket-empty {
+    margin: 3.5% 0;
+}
+
+.basket-delete {
+    display: block;
+    margin: auto;
+}
+
+.some-wrap {
+    margin-top: 1em;
+    border: 1px solid black;
+}
+
+.basket-header {
+    font: 1.3em bold;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.total-sum {
+    font: 1.3em bold;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.cart-button {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
